@@ -5,34 +5,46 @@
     <title>Formulários</title>
   </head>
   <body>
+    <!-- action está vazio pq só veremos em javascript -->
     <form action="" method="get">
       <div>
-        <!-- label é o texto que diz o que vc tem que lugar no input -->
+        <!-- label é o texto que diz o que vc tem que colocar no input -->
         <label for="input-texto">Digite seu nome</label>
-
-        <!-- o input precisa de um tipo -->
-        <!-- placeholder é o texto que irá aparecer na caixa de input enquanto ela estiver vazia -->
+        <!-- o input precisa de um tipo, diz como vai funcionar a inclusão da informação -->        
+        <!-- é preciso um id para linkar esse input com a label (que tem um "for"). Esse "input-texto é apenas um nome dado ao id que deve ser o mesmo nome que aparece no for da label" -->
+        <!-- placeholder é o texto que irá aparecer na caixa de input enquanto ela estiver vazia. É um auxílio para a label.
+        -->
         <input type="text" id="input-texto" placeholder="digite seu nome" />
       </div>
-      <div>
+
+      <!-- são usadas várias "div" para separar o código e assim facilitar o uso de estilos diferentes para essas partes. -->
+      <div>        
         <label for="input-email">Digite seu email</label>
+        <!-- o tipo email mostra no site o  email usado por aquele usuário com frequência em outros sites, assim ele dá opção do usuário só clicar no email desejado ao invés de digitar todo o endereço -->
         <input type="email" id="input-email" placeholder="digite seu email" />
       </div>
       <div>
         <label for="input-password">Digite sua senha</label>
+        <!-- o tipo password oculta a senha digitada, coloca * no lugar -->
+        <!-- required obriga o usuário a preencher aquele campo do formulário -->
         <input
           type="password"
           id="input-password"
-          placeholder="Digite sua senha"
+          placeholder="Digite sua senha"            
+          required
         />
       </div>
+
       <div>
         <label for="input-front">Front end</label>
         <input type="checkbox" id="input-front" value="Front end" />
         <label for="input-back">Back end</label>
         <input type="checkbox" id="input-back" value="Back end" />
       </div>
+      
+      <!-- aqui ainda não tem uma ação configurada -->
       <input type="submit" value="Cadastrar" />
+      <!-- existe a tag <button> e o type button, mas são pouco utilizadas  -->
     </form>
   </body>
 </html>

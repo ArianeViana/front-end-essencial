@@ -1,0 +1,63 @@
+/* seletores de tag */
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: #fff;
+  background-color: #353839;
+}
+
+input {
+  font-size: 20px;
+}
+
+form {
+  width: 720px;
+  margin: auto;
+  text-align: center;
+}
+
+/* o ponto siginifica que estou criando uma classe de estilo --- .nome-classe*/
+/* classe pode se repetir */
+.container {
+  width: 100%;
+}
+
+.box {
+  background: #000;
+  padding: 10px;
+}
+
+.margem-padrao {
+  margin: 5px;
+}
+
+.input-digitavel {
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+/* # significa id, não pode se repetir, é única */
+#botao-cadastrar {
+  border: 3px solid #928e96;
+  border-radius: 25px;
+  background: #f0dbff;
+  float: right;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* outro seletores */
+
+/* podemos usar *, isso vai levar esse estilo a todo código, é usado como padrão, se quiser tirar aquele padrão dentro de alguma parte é só sobrescrever a propriedade */
+/* * {
+  font-style: italic;
+  margin: 0;
+} */
+
+/* escrever explicacao */
+/* header p{
+    color: white;
+} */

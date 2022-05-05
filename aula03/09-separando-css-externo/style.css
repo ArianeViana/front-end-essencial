@@ -1,0 +1,10 @@
+/* usamos de seletor diretamente a tag <p>, logo esse estilo será aplicado a todos os parágrafos*/
+p {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-size: 20px;
+  color: red;
+  /* espaçamento entre as linhas */
+  line-height: 30px;
+  font-weight: bold;
+  background-color: antiquewhite;
+}

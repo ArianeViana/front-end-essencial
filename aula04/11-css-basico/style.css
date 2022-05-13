@@ -1,0 +1,112 @@
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
+  color: crimson;
+  font-weight: normal;
+}
+
+.texto-fundo-escuro {
+  line-height: 30px;
+  color: #fff;
+  background-color: #000;
+}
+
+#titulo-tamanho-diferente {
+  background-color: aqua;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+
+#teste-margin-padding-border {
+  background-color: beige;
+
+  /*espaço entre borda e outros elementos*/
+  margin: 40px 100px 150px 10px; 
+  /* topo direita baixo esquerda */ 
+  /* se só tiver um número será o espaço para todos os lados */  
+  /* se tiver dois números o primeiro será top e bottom, e o segundo esquerda e direita */   
+  /* tbm podemos usar margin-left, margin-top...  */
+
+  /* espaço entre texto e borda */
+  padding: 60px; 
+  /* podemor colocar os 4 valores aqui tbm, ou padding-left, padding-botton...*/
+  /* todas as propriedades do margin tbm ocorrem aqui */
+  
+
+  /* border é a junção de border-width, border-style e border-color */
+  /* espessura da borda do elemento */
+  border: 1px solid green;
+  /*     width  style  color */
+  
+  /* curvatura da borda */
+  border-radius: 6px;
+}
+
+.lado-esquerdo {
+  /* float coloca o componente do lado que você quer */
+  float: left;
+  background-color: blueviolet;
+  width: 200px;
+  color: #fff;
+  padding: 50px;
+  /* display: none ou block -- some ou aparece com o elemento 
+  display: inline -- coloca os elementos um do lado do outro*/
+}
+
+/* hover - efeito quando o mouse fica em cima do elemento*/ 
+.lado-esquerdo:hover {
+  background-color: rgb(157, 75, 235);
+  /*muda o cursor quando é um link clicável */
+  cursor: pointer;
+  /*o tempo antes do efeito do hover acontecer*/
+  transition: 3s;
+}
+
+
+.lado-direito {
+  float: right;
+  background-color: coral;
+  width: 200px;
+  color: #fff;
+  padding: 50px;
+}
+
+.posicionamento-absoluto {
+ /* posicionamento será absoluto, ele deve ter o top e o left para se guiar */
+ /* tomar cuidado com a responsividade */
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  background-color: darkblue;
+  color: #fff;
+  padding: 50px;
+}
+
+.posicionamento-fixo {
+  /* o elemento fica fixo, conforme você for descendo a página ele desce junto */
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: darkorange;
+  color: #fff;
+  padding: 20px;
+}
+
+.posicionamento-relativo {
+  /* é relativa à posição que esse elemento está no fluxo do html  */
+  position: relative;
+  top: 300px;
+  left: 150px;
+  background-color: deeppink;
+  color: #fff;
+  padding: 20px;
+}
+
+.bloco-maior {
+  height: 700px;
+  background-color: gold;
+  /* posso colocar uma imagem de fundo.
+  background-image --- é só passar o caminho da imagem 
+  background-repeat --- informa a repetição da imagem*/
+}
